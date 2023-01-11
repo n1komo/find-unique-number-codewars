@@ -1,13 +1,5 @@
 def find_uniq(arr):
-    find_dublicates(arr)
-    
-    return n   # n: unique number in the array
-
-
-def find_dublicates(arr):
-    seen = set()
-    for i in arr:
-        if i in seen:
+    temp_list = set(arr)
+    for i in temp_list:
+        if arr.count(i) == 1:
             return i
-
-
